@@ -1,0 +1,20 @@
+#!/bin/bash
+#PBS -P lm95
+#PBS -l storage=scratch/lm95
+#PBS -q gpuvolta
+#PBS -l ngpus=1
+#PBS -l ncpus=12
+#PBS -l mem=8gb
+#PBS -l walltime=1:00:00
+#PBS -l wd
+#PBS -j oe
+#PBS -m ae
+#PBS -M liuyh21214@163.com
+
+source /home/562/xz9943/.bashrc
+module load cuda/10.1
+module load gcc
+conda activate gnn
+cd /scratch/lm95/xz9943/GFA
+ 
+python gfa.py
