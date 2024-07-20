@@ -102,7 +102,7 @@ def objective(learning_rate=0.01, weight_decay=0.01, nhid=64,fc_dim=[64, 16],num
         if dataname=="ogbg-molhiv":
             dataset = SVDGraphPropPredDataset(root=path,name=dataname)
             loss_criteria = F.cross_entropy
-        elif dataname == 'COLLAB' or dataname =="IMDB-BINARY":  ##
+        elif dataname == 'COLLAB': ##or dataname =="IMDB-BINARY":  ##
             dataset = SVDTUD(path, name=dataname, pre_transform=T.OneHotDegree(max_degree=492))###add zero feature to 1000
             loss_criteria = F.cross_entropy
         elif dataname =="IMDB-BINARY":  ##
