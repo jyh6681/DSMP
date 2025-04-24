@@ -9,7 +9,7 @@ the precision and accuracy of graph signal processing. We provide theoretical pr
 demonstrating the DSMP’s effectiveness in mitigating these issues under specific conditions.
 Additionally, we support our claims with empirical evidence and thorough frequency analysis,
 showcasing the DSMP’s superior ability to address instability, over-smoothing, and oversquashing.
-![image](https://github.com/jyh6681/DSMP/edit/master/DSMP.jpeg)
+![image](https://github.com/jyh6681/DSMP/edit/master/DSMP.jpg)
 ## Below is a brief instruction of implementing DSMP model on graph-level classification task.
 
 ### For experiments on ogbg-molhiv dataset:
